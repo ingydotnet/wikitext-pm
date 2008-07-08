@@ -1,3 +1,0 @@
-This is a paragraph.
-This is part of the same paragraph with no line break.\\
-Now there is a line break.  See you next week!
