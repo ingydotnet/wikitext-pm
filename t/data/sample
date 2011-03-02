@@ -93,3 +93,14 @@ bar
  bar
 -p
 
+=== Zero
+--- sample
+0
+
+--- html
+<p>0</p>
+
+--- wikibyte
++p
+ 0
+-p

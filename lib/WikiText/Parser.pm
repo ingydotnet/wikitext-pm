@@ -50,7 +50,7 @@ sub parse_phrases {
     my $self = shift;
     my $container_type = shift;
     my $types = $self->{grammar}{$container_type}{phrases};
-    while ($self->{input} and length $self->{input}) {
+    while (defined $self->{input} and length $self->{input}) {
         my $match;
         for my $type (@$types) {
             my $matched = $self->find_match(matched_phrase => $type) or next;
