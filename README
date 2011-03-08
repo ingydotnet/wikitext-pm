@@ -2,17 +2,19 @@ NAME
     WikiText - Wiki Text Conversion Tools
 
 SYNOPSIS
+        use WikiText::Sample::Parser;
+        use WikiText::HTML::Emitter;
+    
         my $parser = WikiText::Sample::Parser->new(
             receiver => WikiText::HTML::Emitter->new,
         );
-        
-    my $wikitext = "
-        == A Title
+    
+        my $wikitext = "== A Title
 
         This is some text that contains a '''bold phrase''' in it.
         ";
-        
-    my $html = $parser->parse(shift);
+    
+        my $html = $parser->parse($wikitext);
 
 DESCRIPTION
     The WikiText modules parse documents in various formats. A parse has a

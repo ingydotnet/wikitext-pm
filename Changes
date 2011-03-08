@@ -1,4 +1,8 @@
 ---
+version: 0.10
+date:    Tue Mar  8 12:05:17 EST 2011
+changes: Bug fix from audreyt++.
+---
 version: 0.09
 date:    Tue Jul  8 15:58:12 PDT 2008
 changes: Assert newline at the end of wikitext input.
