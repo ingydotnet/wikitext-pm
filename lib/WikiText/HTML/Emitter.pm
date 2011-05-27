@@ -1,9 +1,18 @@
+##
+# name:      WikiText::HTML::Emitter
+# abstract:  A WikiText Receiver That Generates HTML
+# author:    Ingy döt Net <ingy@cpan.org>
+# license:   perl
+# copyright: 2008, 2011
+
 package WikiText::HTML::Emitter;
 use strict;
 use warnings;
-
 use base 'WikiText::Emitter';
+
 use CGI::Util;
+
+sub break_lines {@_>1?($_[0]->{break_lines}=$_[1]):$_[0]->{break_lines}}
 
 my $type_tags = {
     b => 'strong',
@@ -74,14 +83,13 @@ sub end_node {
 sub text_node {
     my $self = shift;
     my $text = shift;
+    if ($self->break_lines) {
+        $text =~ s/\n/<br>\n/g;
+    }
     $self->{output} .= "$text";
 }
 
 1;
-
-=head1 NAME
-
-WikiText::HTML::Emitter - A WikiText Receiver That Generates HTML
 
 =head1 SYNOPSIS
 
@@ -90,18 +98,3 @@ WikiText::HTML::Emitter - A WikiText Receiver That Generates HTML
 =head1 DESCRIPTION
 
 This receiver module, when hooked up to a parser, produces HTML.
-
-=head1 AUTHOR
-
-Ingy döt Net <ingy@cpan.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2008. Ingy döt Net.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
-=cut

@@ -5,7 +5,9 @@ use warnings;
 sub new {
     my $class = shift;
     my $self = bless {
-        callbacks => ref($class) ? $class->{callbacks} : {},
+        ref($class) ? (map {
+            /^(?:output)$/ ? () : ($_, $class->{$_})
+        } keys %$class) : (),
         @_
     }, ref($class) || $class;
 }
@@ -18,7 +20,6 @@ sub content {
 sub init {
     my $self = shift;
     die "You need to override WikiText::Receiver::init";
-    # $self->{output} = '';
 }
 
 sub insert {

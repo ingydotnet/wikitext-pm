@@ -1,4 +1,10 @@
 ---
+version: 0.11
+date:    Sat May 28 04:49:06 EST 2011
+changes:
+- Switch to Module::Package
+- Allow newlines in text to generate <br>
+---
 version: 0.10
 date:    Tue Mar  8 12:05:17 EST 2011
 changes: Bug fix from audreyt++.
