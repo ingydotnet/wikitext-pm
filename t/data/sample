@@ -108,13 +108,17 @@ bar
 === Simple indented pre block like markdown
 --- sample
   codes
-
 --- html
 <pre>codes</pre>
-=== Indented pre blocks like markdown
+=== Text before indented pre block
 --- sample
-Regular text
-
+A paragraph
+  codes yay
+--- html
+<p>A paragraph</p>
+<pre>codes yay</pre>
+=== Text after space indented pre blocks
+--- sample
   code1
   code2
 

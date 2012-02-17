@@ -2,7 +2,7 @@ package WikiText::Sample::Parser;
 use base 'WikiText::Parser';
 
 sub create_grammar {
-    my $all_blocks = [ 'h1',  'h2', 'h3', 'hr', 'p' ];
+    my $all_blocks = [ 'h1',  'h2', 'h3', 'hr', 'p', 'pre' ];
 
     my $all_phrases = [ 'b', 'i' ];
 
@@ -15,7 +15,8 @@ sub create_grammar {
             match => qr/^           # Blocks must start at beginning
             (                       # Capture paragraph in $1
                 ((?!(?:             # Stop at certain blocks
-                    [\=]            # Headings
+                    [\=] |          # Headings
+                    \s+\S
                 ))
                 .*\S.*\n)+          # Otherwise, collect non-empty lines
             )
@@ -23,6 +24,15 @@ sub create_grammar {
             /x,
             phrases => $all_phrases,
             filter => sub { chomp },
+        },
+        pre => {
+            match => qr/^
+            (
+                (?m: ^\s+.*\S.*\n)+
+            )
+            (\s*\n)*   # and all blank lines after
+            /x,
+            filter => sub { s/^\s*//g; s/\s*$//g; },
         },
         h1 => {
             match => re_header(1),
