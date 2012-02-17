@@ -110,6 +110,7 @@ bar
   codes
 --- html
 <pre>codes</pre>
+
 === Text before indented pre block
 --- sample
 A paragraph
@@ -117,6 +118,7 @@ A paragraph
 --- html
 <p>A paragraph</p>
 <pre>codes yay</pre>
+
 === Text after space indented pre blocks
 --- sample
   code1

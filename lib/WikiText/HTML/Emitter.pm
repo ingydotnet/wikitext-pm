@@ -77,7 +77,7 @@ sub end_node {
     $tag =~ s/-.*//;
     return if ($tag =~ /^(br|hr)$/);
     $self->{output} .= "</$tag>" .
-        ($tag =~ /^(p|hr|ul|ol|li|h\d|table|tr|td)$/ ? "\n" : "");
+        ($tag =~ /^(p|hr|ul|ol|li|h\d|table|tr|td|pre)$/ ? "\n" : "");
 }
 
 sub text_node {
