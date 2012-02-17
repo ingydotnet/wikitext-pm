@@ -104,3 +104,18 @@ bar
 +p
  0
 -p
+
+=== Indented pre blocks like markdown
+--- sample
+Regular text
+
+  code1
+  code2
+
+Not code
+
+--- html
+<p>Regular text</p>
+<pre>code1
+code2</pre>
+<p>Not code</p>
