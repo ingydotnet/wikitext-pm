@@ -125,7 +125,6 @@ A paragraph
 Not code
 
 --- html
-<p>Regular text</p>
 <pre>code1
 code2</pre>
 <p>Not code</p>
