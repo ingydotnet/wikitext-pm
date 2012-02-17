@@ -1,4 +1,4 @@
-use t::TestWikiText tests => 4;
+use t::TestWikiText tests => 7;
 
 #no_diff;
 spec_file 't/data/sample';

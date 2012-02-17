@@ -28,11 +28,14 @@ sub create_grammar {
         pre => {
             match => qr/^
             (
-                (?m: ^\s+.*\S.*\n)+
+                ((?!(?:             # Stop at certain blocks
+                    \S              # Anything starting with nonspace
+                ))
+                (?m: ^\ +.*\S.*\n))+ # otherwise grab lines starting with space
             )
             (\s*\n)*   # and all blank lines after
             /x,
-            filter => sub { s/^\s*//g; s/\s*$//g; },
+            filter => sub { s/^\s*//mg; s/\s*$//mg; },
         },
         h1 => {
             match => re_header(1),
