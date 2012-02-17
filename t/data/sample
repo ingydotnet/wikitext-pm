@@ -105,6 +105,12 @@ bar
  0
 -p
 
+=== Simple indented pre block like markdown
+--- sample
+  codes
+
+--- html
+<pre>codes</pre>
 === Indented pre blocks like markdown
 --- sample
 Regular text
