@@ -1,6 +1,5 @@
+use strict; use warnings;
 package WikiText::Parser;
-use strict;
-use warnings;
 
 sub new {
     my $class = shift;
@@ -173,38 +172,3 @@ sub matched_phrase {
 }
 
 1;
-
-=head1 NAME
-
-WikiText::Parser - Base Class for Creating Text Format Parsers
-
-=head1 SYNOPSIS
-
-    package MyParser;
-    use base 'WikiText::Parser';
-
-    sub create_grammar { 
-        return {
-            # ... define a grammar hash here ...
-        };
-    }
-
-=head1 DESCRIPTION
-
-WikiText::Parser is a base class that you can use to easily generate a
-parser for text document markups (like Wiki or POD markups).
-
-=head1 AUTHOR
-
-Ingy döt Net <ingy@can.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2008. Ingy döt Net.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
-=cut

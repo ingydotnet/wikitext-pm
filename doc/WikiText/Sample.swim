@@ -1,0 +1,25 @@
+WikiText::Sample
+================
+
+A Sample WikiText Called "Sample"
+
+= Synopsis
+
+  use WikiText::Sample;
+
+= Description
+
+This simple example markup consisting of H1, H2, H3, P, STRONG and EM.
+
+= Author
+
+Ingy döt Net <ingy@cpan.org>
+
+= Copyright
+
+Copyright 2008-2014. Ingy döt Net.
+
+This program is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+See http://www.perl.com/perl/misc/Artistic.html

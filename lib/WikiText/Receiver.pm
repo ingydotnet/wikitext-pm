@@ -1,6 +1,5 @@
+use strict; use warnings;
 package WikiText::Receiver;
-use strict;
-use warnings;
 
 sub new {
     my $class = shift;
@@ -51,31 +50,3 @@ sub text_node {
 }
 
 1;
-
-=head1 NAME
-
-WikiText::Receiver - An Interface Class
-
-=head1 SYNOPSIS
-
-    use base 'WikiText::Receiver';
-    
-=head1 DESCRIPTION
-
-The base class of WikiText modules that act as receivers of parse events, and
-are therefore hooked up to a parser.
-
-=head1 AUTHOR
-
-Ingy döt Net <ingy@cpan.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2008. Ingy döt Net.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
-=cut

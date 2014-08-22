@@ -80,31 +80,3 @@ sub _get_attributes {
 }
 
 1;
-
-=head1 NAME
-
-WikiText::WikiByte::Emitter - A WikiByte Emitter
-
-=head1 SYNOPSIS
-
-    use WikiText::WikiByte::Emitter;
-    
-=head1 DESCRIPTION
-
-A receiver module to write documents as WikiByte. WikiByte is a
-intermediate format for all wiki languages.
-
-=head1 AUTHOR
-
-Ingy döt Net <ingy@cpan.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2008. Ingy döt Net.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
-=cut

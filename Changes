@@ -1,4 +1,9 @@
 ---
+version: 0.16
+date:    Fri Aug 22 09:25:52 PDT 2014
+changes:
+- Switch to Zilla-Dist
+---
 version: 0.15
 date:    Wed Jun  1 19:52:42 EST 2011
 changes:
@@ -27,26 +32,31 @@ changes:
 ---
 version: 0.10
 date:    Tue Mar  8 12:05:17 EST 2011
-changes: Bug fix from audreyt++.
+changes:
+- Bug fix from audreyt++.
 ---
 version: 0.09
 date:    Tue Jul  8 15:58:12 PDT 2008
-changes: Assert newline at the end of wikitext input.
+changes:
+- Assert newline at the end of wikitext input.
 ---
 version: 0.08
 date:    Thu Feb 14 22:24:18 PST 2008
-changes: Account for multiple text events in a row.
+changes:
+- Account for multiple text events in a row.
 ---
 version: 0.07
 date:    Thu Feb 14 01:44:34 PST 2008
 changes:
-  - Support '=' in WikiByte
-  - Make reduction errors smaller
+- Support '=' in WikiByte
+- Make reduction errors smaller
 ---
 version: 0.06
 date:    Wed Feb 13 01:47:51 PST 2008
-changes: Turn WikiText.pm into a base class
+changes:
+- Turn WikiText.pm into a base class
 ---
 version: 0.05
 date:    Mon Feb 11 23:44:02 PST 2008
-changes: Maiden voyage
+changes:
+- Maiden voyage

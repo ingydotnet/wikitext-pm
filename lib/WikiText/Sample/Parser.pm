@@ -83,31 +83,3 @@ sub re_header {
 }
 
 1;
-
-=head1 NAME
-
-WikiText::Sample::Parser - A Parser For Sample Markup
-
-=head1 SYNOPSIS
-
-    use WikiText::Sample::Parser;
-    
-=head1 DESCRIPTION
-
-This module turns Sample markup text into parse events end sends them to
-a receiver.
-
-=head1 AUTHOR
-
-Ingy döt Net <ingy@cpan.org>
-
-=head1 COPYRIGHT
-
-Copyright (c) 2008. Ingy döt Net.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
-=cut

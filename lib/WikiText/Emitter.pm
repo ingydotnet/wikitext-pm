@@ -1,6 +1,5 @@
+use strict; use warnings;
 package WikiText::Emitter;
-use strict;
-use warnings;
 
 use base 'WikiText::Receiver';
 

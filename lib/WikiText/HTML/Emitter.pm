@@ -1,10 +1,3 @@
-##
-# name:      WikiText::HTML::Emitter
-# abstract:  A WikiText Receiver That Generates HTML
-# author:    Ingy döt Net <ingy@cpan.org>
-# license:   perl
-# copyright: 2008, 2011
-
 package WikiText::HTML::Emitter;
 use strict;
 use warnings;
@@ -36,7 +29,7 @@ sub begin_node {
 #    $tag =~ s/-.*//;
     $self->{output} .=
       ($tag =~ /^(br|hr)$/)
-        ? "<$tag />\n" 
+        ? "<$tag />\n"
         : ($type eq "hyperlink")
           ?  $self->begin_hyperlink($node)
         : ($type eq "wikilink")
@@ -90,11 +83,3 @@ sub text_node {
 }
 
 1;
-
-=head1 SYNOPSIS
-
-    use WikiText::HTML::Emitter;
-    
-=head1 DESCRIPTION
-
-This receiver module, when hooked up to a parser, produces HTML.

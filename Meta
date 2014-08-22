@@ -1,0 +1,28 @@
+=meta: 0.0.2
+
+name: WikiText
+version: 0.16
+abstract: Wiki Text Conversion Tools
+homepage: https://metacpan.org/release/WikiText
+language: perl
+license: perl
+copyright: 2014
+
+author:
+  name: Ingy döt Net
+  email: ingy@cpan.org
+  homepage: http://ingy.net
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+
+requires:
+  perl: 5.8.1
+
+devel:
+  git: https://github.com/ingydotnet/wikitext-pm
+  bug: https://github.com/ingydotnet/wikitext-pm/issues
+  irc: irc.freenode.net#swimtext
+
+=zild:
+  include_testbase: true
