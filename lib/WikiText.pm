@@ -1,6 +1,6 @@
 use strict; use warnings;
 package WikiText;
-our $VERSION = '0.16';
+our $VERSION = '0.17';
 
 sub new {
     my $class = shift;

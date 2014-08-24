@@ -1,8 +1,12 @@
 package WikiText::namespace;
 package WikiText::Creole;
+;
 package WikiText::DokuWiki;
+my $x = 1;
 package WikiText::HTML;
+
 package WikiText::Kwiki;
+#
 package WikiText::MediaWiki;
 package WikiText::MoinMoin;
 package WikiText::OddMuse;

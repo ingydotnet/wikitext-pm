@@ -1,4 +1,9 @@
 ---
+version: 0.17
+date:    Sun Aug 24 07:10:54 PDT 2014
+changes:
+- Try some ::namespace tricks for indexing
+---
 version: 0.16
 date:    Fri Aug 22 09:25:52 PDT 2014
 changes:
