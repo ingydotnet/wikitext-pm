@@ -1,4 +1,4 @@
-use lib -e 't' ? 't' : 'test';
+use lib 'inc';
 package TestWikiText;
 use Test::Base -Base;
 

@@ -1,4 +1,4 @@
-package WikiText::namespace;
+package WikiText::Alias;
 
 package WikiText::Creole;
 ;

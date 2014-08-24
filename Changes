@@ -1,4 +1,9 @@
 ---
+version: 0.19
+date:    Sun Aug 24 08:30:59 PDT 2014
+changes:
+- Add 'inc' for Test::Base inclusion
+---
 version: 0.18
 date:    Sun Aug 24 07:31:19 PDT 2014
 changes:
